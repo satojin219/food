@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>食品成分表</title>
 </head>
+
 <body>
   <form name="form1" action="">
-  <input name="food" type="text" id="food" value="" placeholder="">
-  <input id="number" type="text" placeholder="重量をしてください">
-  <input id="exec" type="button" value="計算する" class="button" />
-  
-  <input type="button" class="add" value="＋">
-  <input type="button" class="delete" value="－">
-</form>
+
+    <table>
+
+      <tr>
+        <th>品名</th>
+        <th>重量(g)</th>
+        <div class="wrapper">
+          <th>カロリー(kcal)</th>
+          <th>炭水化物(g)</th>
+          <th>たんぱく質(g)</th>
+          <th>脂質(g)</th>
+          <th>カルシウム(mg)</th>
+          <th>鉄(mg)</th>
+          <th>亜鉛(mg)</th>
+          <th>ビタミンA(㎍)</th>
+          <th>ビタミンB₁(mg)</th>
+          <th>ビタミンB₂(mg)</th>
+          <th>ビタミンC(mg)</th>
+          <th>食物繊維(g)</th>
+          <th>食塩相当量(g)</th>
+        </div>
+      </tr>
+      <tr>
+        <td>
+          <input name="food" type="text" id="food" value="" placeholder="品名を入力">
+        </td>
+        <td>
+          <input id="number" type="text" placeholder="重量を入力">
+        </td>
+        <div class="wrapper">
+
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </div>
+        </tr>
+        
+
+      <input type="button" class="button" value="計算する">
+      <input type="button" class="add" value="＋">
+      <input type="button" class="delete" value="－">
+    </table>
+
+  </form>
   <div class="food_composition"></div>
 
-  <script src="./node_modules/suggestrap/lib/suggestrap.js"></script>
-  <script src="main.js"></script>
-</html>
 
+
+
+
+  <script src="../node_modules/suggestrap/lib/suggestrap.js"></script>
+  <script src="main.js"></script>
+
+
+</html>

@@ -22,12 +22,14 @@ fetch(API)
     const composition = document.querySelector('.food_composition');
     const num=document.querySelector('#number');
     button.addEventListener('click', () => {
-      const value = document.forms[0].elements[0].value;
+      const textbox =document.getElementById("food");
+      const value=textbox.value;
 
       let food_list = food_lists.filter((item) => {
         return (value == item.food_name);
       });
 
+     
       
       const nutrition = `<ul>
 <li>食品名:${food_list[0].food_name} </li>
@@ -48,7 +50,7 @@ fetch(API)
 
       composition.innerHTML = nutrition;
 
-
+      console.log();
     });
 
   })
