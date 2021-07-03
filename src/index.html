@@ -12,7 +12,7 @@
 <body>
   <form name="form1" action="">
 
-    <table>
+    <table id="table">
 
       <tr>
         <th>品名</th>
@@ -33,7 +33,7 @@
           <th>食塩相当量<br>(g)</th>
         </div>
       </tr>
-      <tr>
+      <tr id="row">
         <td>
           <input name="food" type="text" id="food" value="" placeholder="品名を入力">
         </td>
@@ -60,8 +60,8 @@
         
 
       <input type="button" class="button" value="計算する">
-      <input type="button" class="add" value="＋">
-      <input type="button" class="delete" value="－">
+      <!-- <input type="button" class="add" value="＋">
+      <input type="button" class="delete" value="－"> -->
     </table>
 
   </form>
@@ -71,8 +71,7 @@
 
 
 
-  <script src="../node_modules/suggestrap/lib/suggestrap.js"></script>
-  <script src="main.js"></script>
-
+  <script  src="../node_modules/suggestrap/lib/suggestrap.js"></script>
+  <script  src="main.js"></script>
 
 </html>
