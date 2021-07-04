@@ -51,19 +51,24 @@ button.addEventListener('click', () => {
   const fib = food_list[0].fib_ * (num.value / 100);
   const alc = food_list[0].alc * (num.value / 100);
 
-  cells[2].innerHTML = kcal.toFixed(0);
-  cells[3].innerHTML = prot.toFixed(1);
-  cells[4].innerHTML = fat.toFixed(1);
-  cells[5].innerHTML = ca.toFixed(0);
-  cells[6].innerHTML = fe.toFixed(1);
-  cells[7].innerHTML = k.toFixed(0);
-  cells[8].innerHTML = ze.toFixed(1);
-  cells[9].innerHTML = vA.toFixed(2);
-  cells[10].innerHTML = vB1.toFixed(2);
-  cells[11].innerHTML = vB2.toFixed(2);
-  cells[12].innerHTML = vC.toFixed(2);
-  cells[13].innerHTML = fib.toFixed(1);
-  cells[14].innerHTML = alc.toFixed(1);
+  const round = (index, nutrition, decimal) => {
+
+    return cells[index].innerHTML = nutrition.toFixed(decimal);
+  }
+  round(2, kcal, 0);
+  round(3, prot, 1);
+  round(4, fat, 1);
+  round(5, ca, 0);
+  round(6, fe, 1);
+  round(7, k, 0);
+  round(8, ze, 1);
+  round(9, vA, 2);
+  round(10, vB1, 2);
+  round(11, vB2, 2);
+  round(12, vC, 2);
+  round(13, fib, 1);
+  round(14, alc, 1)
+
 
 
 
