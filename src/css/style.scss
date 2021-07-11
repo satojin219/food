@@ -1,16 +1,115 @@
-table{
+.table-content{
+ display: block;
+ margin: 0 auto;
+ width: 100%;
+}
+table {
   border: solid 1px white;
   text-align: center;
-  margin: 0 auto;
-  width: 200px;
-  th{
+
+
+  th {
+    width: 100%;
     background-color: #a6ce39;
     color: white;
     padding: 10px;
   }
-  td{
+
+  td {
+    width: 100%;
     background-color: #ddd;
     padding: 10px;
+
+  }
+  // thead{
+  //   display: flex;
+  // }
+  // tbody{
+  //   display: flex;
+  // }
+}
+
+
+
+.button {
+  display: block;
+  border-radius: 5%;
+  font-size: 15pt;
+  font-weight: weight;
+  text-align: center;
+  cursor: pointer;
+  padding: 11px 44px;
+  background: #1f8e83;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #1f8e83;
+  margin: 0 auto;
+  box-shadow: 3px 6px #32605a;
  
+ 
+
+
+
+  &:active {
+    position: relative;
+    box-shadow: none;
+    transform: translateY(6px);
+    transform: translateX(3px);
+
+  }
+
+  &:hover {
+    background: #1f8e83;
+    opacity: 0.7;
+  }
+}
+
+
+@media (max-width:1200px) {
+//   .table-contents {
+//     overflow-x: scroll;
+//     width: 640px;
+//   }
+
+//   table {
+//     width: 100%;
+// display: block;
+//   }
+
+  #table {
+    width: 100%;
+  }
+  #table tr {
+    display: block;
+    float: left;
+  }
+  #table tr td, 
+  #table tr th {
+    border-left: none;
+    display: block;
+    height: 50px;
+  }
+  #table thead {
+    display: block;
+    float: left;
+    width: 30%;
+  }
+  #table thead tr {
+    width: 100%;
+  }
+  #table tbody {
+    display: block;
+    float: left;
+    width: 70%;
+  }
+  #table tbody tr {
+    width: 50%;
+  }
+  #table tr td + td {
+    border-left: none;
+  }
+  #table tbody td:last-child {
+    border-bottom: solid 1px #ccc;
   }
 }
