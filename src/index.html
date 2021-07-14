@@ -10,16 +10,17 @@
 </head>
 
 <body>
+ <div class="cp_iptxt">
+  <input name="food" type="text" id="food" value="" placeholder="品名を入力">
+ 
+</div>
+      <input id="number" type="text" class="weight" placeholder="重量(g)を入力">
+      <input type="button" class="button" value="計算する">
+      
 
-  
-  <div class="table-content">
     <table id="table">
       <thead>
-
         <tr>
-
-          <th>品名</th>
-          <th>重量(g)</th>
           <th>カロリー<br>(kcal)</th>
           <th>炭水化物<br>(g)</th>
           <th>たんぱく質<br>(g)</th>
@@ -38,12 +39,6 @@
 
       <tbody>
         <tr id="row">
-          <td>
-            <input name="food" type="text" id="food" value="" placeholder="品名を入力">
-          </td>
-          <td>
-            <input id="number" type="text" class="weight" placeholder="重量を入力">
-          </td>
           <td></td>
           <td></td>
           <td></td>
@@ -57,21 +52,10 @@
           <td></td>
           <td></td>
           <td></td>
-
         </tr>
       </tbody>
-
-
-      <input type="button" class="button" value="計算する">
-      <!-- <input type="button" class="add" value="＋">
-      <input type="button" class="delete" value="－"> -->
     </table>
   </div>
-
-
-
-
-
 
   <script src="../node_modules/suggestrap/lib/suggestrap.js"></script>
   <script src="main.js"></script>
