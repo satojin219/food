@@ -1,24 +1,27 @@
+html {
+  background-color: #f1eac3;
+}
+
 .table-content {
+  padding-top: 30px;
   display: block;
-  margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 
 table {
-  border: solid 1px white;
+  display: block;
   text-align: center;
+  margin: 0 auto;
 }
 
 table th {
-  width: 100%;
   background-color: #a6ce39;
   color: white;
   padding: 10px;
 }
 
 table td {
-  width: 100%;
-  background-color: #ddd;
+  background-color: rgba(255, 255, 255, 0.925);
   padding: 10px;
 }
 
@@ -36,7 +39,6 @@ table td {
   -webkit-transition: .3s;
   transition: .3s;
   border: 2px solid #1f8e83;
-  margin: 0 auto;
   -webkit-box-shadow: 3px 6px #32605a;
           box-shadow: 3px 6px #32605a;
 }
@@ -56,9 +58,28 @@ table td {
   opacity: 0.7;
 }
 
+input {
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #c0bcbc;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.925);
+}
+
 @media (max-width: 1200px) {
-  #table {
+  input, table {
     width: 100%;
+    padding: auto 30px;
+  }
+  input[type="text"] {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #table {
+    display: block;
+    margin: 0 auto;
   }
   #table tr {
     display: block;
@@ -73,7 +94,7 @@ table td {
   #table thead {
     display: block;
     float: left;
-    width: 30%;
+    width: 40%;
   }
   #table thead tr {
     width: 100%;
@@ -81,10 +102,10 @@ table td {
   #table tbody {
     display: block;
     float: left;
-    width: 70%;
+    width: 60%;
   }
   #table tbody tr {
-    width: 50%;
+    width: 100%;
   }
   #table tr td + td {
     border-left: none;

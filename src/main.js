@@ -15,7 +15,7 @@ const API = "https://apex.oracle.com/pls/apex/nutrition/food/food"
 const res=await fetch(API);
 const json=await res.json();
 const food_lists=await json.items;
-
+console.log(food_lists);
 const req = {
   target: "food",
   key: "food_name",
@@ -67,19 +67,19 @@ const suggestrap = new Suggestrap(req, option);
         
         return cells[index].innerHTML = nutrition.toFixed(decimal);
       }
-      round(2, kcal, 0);
-      round(3, prot, 1);
-      round(4, fat, 1);
-      round(5, ca, 0);
-      round(6, fe, 1);
-      round(7, k, 0);
-      round(8, ze, 1);
-      round(9, vA, 2);
-      round(10, vB1, 2);
-      round(11, vB2, 2);
-      round(12, vC, 2);
-      round(13, fib, 1);
-      round(14, alc, 1)
+      round(0, kcal, 0);
+      round(1, prot, 1);
+      round(2, fat, 1);
+      round(3, ca, 0);
+      round(4, fe, 1);
+      round(5, k, 0);
+      round(6, ze, 1);
+      round(7, vA, 2);
+      round(8, vB1, 2);
+      round(9, vB2, 2);
+      round(10, vC, 2);
+      round(11, fib, 1);
+      round(12, alc, 1)
       
       
       
