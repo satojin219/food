@@ -23,8 +23,7 @@ const req = {
 
 };
 const option = {
-  count: 10,
-  id: "suggestrap_2"
+  count: 1000,
 }
 const suggestrap = new Suggestrap(req, option);
 
