@@ -1,6 +1,10 @@
 html {
   background-color: #f1eac3;
 }
+header{
+  display: flex;
+  
+}
 
 .table-content {
   padding-top: 30px;
