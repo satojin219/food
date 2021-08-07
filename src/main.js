@@ -4,18 +4,28 @@ async function fetchApi() {
   const res        = await fetch(API);
   const json       = await res.json();
   const food_lists = await json.items;
-  console.log(food_lists);
+  // return food_lists;
+  let m =[];
+  food_lists.forEach(food_list => {
+    const name=food_list.food_name;
+    m.push(name);
+  });
+  console.log(m);
+$(function(){
+  $("#food").autocomplete({
+  source:m,
+});
+});
+  // const req = {
+  //   target: "food",
+  //   key: "food_name",
+  //   values: food_lists
 
-  const req = {
-    target: "food",
-    key: "food_name",
-    values: food_lists
-
-  };
-  const option = {
-    count: 1000,
-  }
-  const suggestrap = new Suggestrap(req, option);
+  // };
+  // const option = {
+  //   count: 1000,
+  // }
+  // const suggestrap = new Suggestrap(req, option);
 
 
 
