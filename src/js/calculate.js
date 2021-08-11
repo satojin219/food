@@ -1,25 +1,4 @@
-const API = "https://apex.oracle.com/pls/apex/nutrition/food/food"
-
- async function fetchApi() {
-  const res        = await fetch(API);
-  const json       = await res.json();
-  const food_lists = await json.items;
-  console.log(food_lists);
-
-  let m =[];
-  food_lists.forEach(food_list => {
-    const name=food_list.food_name;
-    m.push(name);
-  });
-  // console.log(m);
-$(function(){
-  $("#food").autocomplete({
-  source:m,
-});
-});
-
-
-
+import { food_lists } from "./fetch.js";
 
 const calculateButton =document.querySelector('.button');
 const edibleWeight    =document.querySelector('#weight');
@@ -88,9 +67,5 @@ const alc     =searchedFood[0].alc*(edibleWeight.value / 100);
   nutritionCalculate(vC      ,23,2);
   nutritionCalculate(fib     ,24,1);
   nutritionCalculate(alc     ,25,1);
-  
 
 });
-
-}
-fetchApi();
