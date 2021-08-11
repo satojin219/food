@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" media="all" /> -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link href='https://css.gg/info.css' rel='stylesheet'>
- 
+
   <link rel="stylesheet" href="css/icon.css">
   <link rel="stylesheet" href="css/button.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,43 +22,50 @@
 </head>
 
 <body>
+
   <section class="desicription">
-    <header>
-      
-      <div class="content-wrapper">
+    <div class="content-wrapper">
+      <header>
+
         <div class="title-wrapper">
           <h1>栄養価自動計算/カロリー計算 </h1>
-          <i class="gg-info">     <span class="outline">
-            <i class="">WHAT’S CALCULATION</i> <br>
-    日本食品標準成分表に基づいた栄養価計算ができます。
-    栄養価計算の方法：食材名を下の表にひらがなでを入力しますと、食品候補が出てきますのでその中から食品を選択し、可食部重量を入力します。
-           </span>   </i>
-         
-
-
-
+          <i class="gg-info"> <span class="outline">
+              <i class="">WHAT’S CALCULATION</i> <br>
+              日本食品標準成分表に基づいた栄養価計算ができます。
+              栄養価計算の方法：食材名を下の表にひらがなでを入力しますと、食品候補が出てきますのでその中から食品を選択し、可食部重量を入力します。
+            </span> </i>
         </div>
       </header>
 
-
- <a href="https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html">食品成分値は日本食品標準成分表2020年版（八訂）のデータを使用しております。</a> 
-<p>日本食品標準成分表におけるTr(微量、トレース)、推定値の (0) 、該当する値がない「-」は0として表示・計算しております。また、推計値である（）付の値は、カッコの中の数値を表示・計算しており、カッコを表示しません。</p>
-    </div>
-  </section>
-  <div class="cp_iptxt">
-   <input class=" fa" placeholder="&#xf002; 品名を入力" type="text" id="food">
-  <!-- <input name="food" type="text" id="food" value="" placeholder=" 品名を入力"> -->
-
+<section class="">
+<div class="outline-wrapper">
+  <a href="https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html">食品成分値は日本食品標準成分表2020年版（八訂）のデータを使用しております。</a>
+  <p>日本食品標準成分表におけるTr(微量、トレース)、推定値の (0) 、該当する値がない「-」は0として表示・計算しております。また、推計値である（）付の値は、カッコの中の数値を表示・計算しており、カッコを表示しません。<br>
+    ＊ビタミンAはレチノール活性当量、ナイアシンはナイアシン当量、ビタミンEはα-トコフェノールの値を示しています。＊<br>
+    ＊品名はひらがな、重量は半角英数字で入力してください。＊
+  </p>
 </div>
-      <input id="number" type="text" class="weight fa"  placeholder="&#xf496; 可食部重量(g)を入力" />
-     
-      
-      <!-- <input type="button"  value="" placeholder="" > -->
-      <button class="button faa-parent animated-hover">
-        <i class="fas fa-calculator faa-float"></i>
-        計算する
-      </button>
-<div class="table-content">
+</section>
+</div>
+  </section>
+
+<div class="content-wrapper">
+
+
+  <div class="cp_iptxt">
+    <input class=" fa" placeholder="&#xf002; 品名を入力" type="text" id="food">
+    <!-- <input name="food" type="text" id="food" value="" placeholder=" 品名を入力"> -->
+
+  </div>
+  <input id="number" type="text" class="weight fa" placeholder="&#xf496; 可食部重量(g)を入力" />
+
+
+  <!-- <input type="button"  value="" placeholder="" > -->
+  <button class="button faa-parent animated-hover">
+    <i class="fas fa-calculator faa-float"></i>
+    計算する
+  </button>
+  <div class="table-content">
 
     <table id="table">
       <thead>
@@ -75,17 +82,17 @@
           <th>鉄<br>(mg)</th>
           <th>亜鉛<br>(mg)</th>
           <th>銅<br>(mg)</th>
-          <th>ビタミンA<br>(㎍)</th>
-          <th>ビタミンD<br>(㎍)</th>
-          <th>ビタミンK<br>(㎍)</th>
-          <th>ビタミンE<br>(㎍)</th>
+          <th>ビタミンA<br>(μg)</th>
+          <th>ビタミンD<br>(μg)</th>
+          <th>ビタミンK<br>(μg)</th>
+          <th>ビタミンE<br>(μg)</th>
           <th>ビタミンB₁<br>(mg)</th>
           <th>ビタミンB₂<br>(mg)</th>
           <th>ビタミンB₆<br>(mg)</th>
-          <th>ビタミンB₁₂<br>(㎍)</th>
+          <th>ビタミンB₁₂<br>(μg)</th>
           <th>ナイアシン<br>(mg)</th>
           <th>パントテン酸<br>(mg)</th>
-          <th>葉酸<br>(㎍)</th>
+          <th>葉酸<br>(μg)</th>
           <th>ビタミンC<br>(mg)</th>
           <th>食物繊維<br>(g)</th>
           <th>食塩相当量<br>(g)</th>
@@ -124,7 +131,7 @@
       </tbody>
     </table>
   </div>
-
+</div>
   <script src="../node_modules/suggestrap/lib/suggestrap.js"></script>
   <script src="js/main.js"></script>
   <script src="js/animation.js"></script>

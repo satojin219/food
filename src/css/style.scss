@@ -2,54 +2,72 @@ html {
   background-color: #f1eac3;
 }
 
+body {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.outline-wrapper {
+  background-color: rgba(255, 255, 255, 0.76);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
 .table-content {
   padding-top: 30px;
   // display: block;
   overflow-x: scroll;
-  width: 640px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-body{
-  font-family:"Font Awesome 5 Free","Font Awesome 5 Brands";
-}
+
 
 table {
-  // display: block;
-
-  // text-align: center;
-  // margin: 0 auto;
   white-space: nowrap;
   border-collapse: collapse;
-  min-width: 640px;
+  border: 2px solid #bbb;
 
   th {
-
     background-color: #a6ce39;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    border: 2px solid #bbb;
   }
 
   td {
-
     background-color: rgba(255, 255, 255, 0.925);
-
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #bbb;
+    font-weight: bolder;
+    font-size: 20px;
+    align-items: center;
 
   }
-
-  // thead{
-  //   display: flex;
-  // }
-  // tbody{
-  //   display: flex;
-  // }
 }
 
 
 
 .button {
   font-family: FontAwesome;
-
+  margin: 0 auto;
+  width: 50%;
   display: block;
   border-radius: 5%;
   font-size: 15pt;
@@ -84,29 +102,23 @@ table {
 }
 
 input {
+  width: 100%;
+  display: block;
   margin-bottom: 10px;
-  width: 80%;
   border-radius: 5px;
   border: 1px solid rgb(192, 188, 188);
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.925);
 }
 
-@media (max-width:1200px) {
-  //   .table-contents {
-  //     overflow-x: scroll;
-  //     width: 640px;
-  //   }
-
-  //   table {
-  //     width: 100%;
-  // display: block;
-  //   }
-  input,table{
+@media (max-width:600px) {
+  input,
+  table {
     width: 100%;
     padding: auto 30px;
   }
-  input[type="text"]{
+
+  input[type="text"] {
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -135,8 +147,6 @@ input {
     display: block;
     float: left;
     width: 40%;
-    // border: solid 1px white;
-
   }
 
   #table thead tr {
@@ -147,8 +157,6 @@ input {
     display: block;
     float: left;
     width: 60%;
-    // border: solid 1px white;
-
   }
 
   #table tbody tr {
@@ -164,7 +172,7 @@ input {
   }
 }
 
-.title-wrapper{
+.title-wrapper {
   display: flex;
 
 }
