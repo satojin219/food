@@ -1,0 +1,40 @@
+.gg-info {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 27px;
+  margin-left: 10px;
+
+
+&:hover .outline{
+  display: block;
+  animation :modal .5s;
+ animation-fill-mode: forwards;
+
+}
+@keyframes modal {
+  0%{
+    transform: scale(0.5);
+  }
+  80%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.95);
+  }
+}
+}
+.outline{
+  transform: scale(0);
+  border:2px solid #1f8e83;
+  position   : absolute;                  
+  margin:0 auto;
+  padding: 20px;
+  background-color: #fff;       
+  width:  40vh;
+  right: 60%;                      
+  top : 100%;                       
+  margin-top : 10px;                
+  font-size: 80%;    
+}
+
