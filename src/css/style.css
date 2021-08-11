@@ -1,15 +1,15 @@
 html {
   background-color: #f1eac3;
 }
-header{
-  display: flex;
-  
-}
 
 .table-content {
   padding-top: 30px;
   overflow-x: scroll;
   width: 640px;
+}
+
+body {
+  font-family: "Font Awesome 5 Free","Font Awesome 5 Brands";
 }
 
 table {
@@ -30,6 +30,7 @@ table td {
 }
 
 .button {
+  font-family: FontAwesome;
   display: block;
   border-radius: 5%;
   font-size: 15pt;
@@ -117,5 +118,11 @@ input {
   #table tbody td:last-child {
     border-bottom: solid 1px #ccc;
   }
+}
+
+.title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
