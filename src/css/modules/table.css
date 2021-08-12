@@ -1,0 +1,68 @@
+html {
+  background-color: #f1eac3;
+}
+
+body {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.outline-wrapper {
+  background-color: rgba(255, 255, 255, 0.76);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.table-content {
+  padding-top: 30px;
+  overflow-x: scroll;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  white-space: nowrap;
+  border-collapse: collapse;
+  border: 2px solid #bbb;
+}
+
+table th {
+  background-color: #a6ce39;
+  color: white;
+  padding: 20px;
+  border: 2px solid #bbb;
+}
+
+table td {
+  background-color: rgba(255, 255, 255, 0.925);
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #bbb;
+  font-weight: bolder;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=table.css.map */

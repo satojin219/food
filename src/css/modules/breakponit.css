@@ -1,0 +1,61 @@
+@media (max-width: 600px) {
+  input,
+  table {
+    width: 100%;
+    padding: auto 30px;
+  }
+  input[type="text"] {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #table {
+    display: block;
+    margin: 0 auto;
+  }
+  #table tr {
+    display: block;
+    float: left;
+  }
+  #table tr td,
+  #table tr th {
+    border-left: none;
+    display: block;
+    height: 50px;
+  }
+  #table thead {
+    display: block;
+    float: left;
+    width: 40%;
+  }
+  #table thead tr {
+    width: 100%;
+  }
+  #table tbody {
+    display: block;
+    float: left;
+    width: 60%;
+  }
+  #table tbody tr {
+    width: 100%;
+  }
+  #table tr td + td {
+    border-left: none;
+  }
+  #table tbody td:last-child {
+    border-bottom: solid 1px #ccc;
+  }
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=breakponit.css.map */

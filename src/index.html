@@ -61,10 +61,20 @@
 
 
   <!-- <input type="button"  value="" placeholder="" > -->
-  <button class="button faa-parent animated-hover">
+  <div class="button-container">
+<div class="button-item">
+
+  <button class="button cal-button faa-parent animated-hover">
     <i class="fas fa-calculator faa-float"></i>
     計算する
   </button>
+</div>
+<div class="button-item">
+  <button class="button clear-button faa-parent animated-hover">
+    クリア
+  </button>
+</div>
+</div>
   <div class="table-content">
 
     <table id="table">
@@ -132,8 +142,7 @@
     </table>
   </div>
 </div>
-  <!-- <script src="../node_modules/suggestrap/lib/suggestrap.js"></script> -->
-  <script type="module" src="js/fetch.js"></script>
-  <script type="module" src="js/calculate.js"></script>
+  
+  <script type="module" src="js/index.js"></script>
 
 </html>

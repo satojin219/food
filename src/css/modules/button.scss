@@ -1,0 +1,54 @@
+
+.button {
+  font-family: FontAwesome;
+margin-top: 10px;
+width: 300px;
+  display: block;
+  border-radius: 5%;
+  font-size: 15pt;
+  font-weight: weight;
+  text-align: center;
+  cursor: pointer;
+  padding: 11px 44px;
+  background: #1f8e83;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #1f8e83;
+
+  box-shadow: 3px 6px #32605a;
+
+
+
+
+
+  &:active {
+    position: relative;
+    box-shadow: none;
+    transform: translateY(6px);
+    transform: translateX(3px);
+
+  }
+
+  &:hover {
+    background: #1f8e83;
+    opacity: 0.7;
+  }
+}
+.button-container{
+display: flex;
+justify-content: space-around;
+
+}
+
+input {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 188, 188);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.925);
+}
+
+
