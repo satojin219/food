@@ -1,0 +1,38 @@
+{
+  "name": "nutritionapp",
+  "version": "1.0.0",
+  "description": "食品構成表2020（八訂）https://www.mext.go.jp/content/20201225-mxt_kagsei-mext_01110_012.xlsx",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "autoprefixer": "^10.3.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "suggestrap": "^2.6.0",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satojin219/food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satojin219/food/issues"
+  },
+  "homepage": "https://github.com/satojin219/food#readme"
+}
