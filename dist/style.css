@@ -1,0 +1,258 @@
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss ***!
+  \*******************************************************************************************************************************************************/
+html {
+  background-color: #f1eac3;
+}
+
+body {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  display: flex;
+}
+
+.outline-wrapper {
+  background-color: rgba(255, 255, 255, 0.76);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.table-content {
+  padding-top: 30px;
+  overflow-x: scroll;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  white-space: nowrap;
+  border-collapse: collapse;
+  border: 2px solid #bbb;
+}
+table th {
+  background-color: #a6ce39;
+  color: white;
+  padding: 20px;
+  border: 2px solid #bbb;
+}
+table td {
+  background-color: rgba(255, 255, 255, 0.925);
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #bbb;
+  font-weight: bolder;
+  font-size: 20px;
+  align-items: center;
+}
+
+.gg-info {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 40px;
+}
+
+.gg-info::after,
+.gg-info::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  background: currentColor;
+  left: 7px;
+}
+
+.gg-info::after {
+  bottom: 2px;
+  height: 8px;
+}
+
+.gg-info::before {
+  height: 2px;
+  top: 2px;
+}
+
+.gg-info {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 27px;
+  margin-left: 10px;
+}
+.gg-info:hover .outline {
+  display: block;
+  -webkit-animation: modal 0.5s;
+          animation: modal 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes modal {
+  0% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@keyframes modal {
+  0% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.outline {
+  transform: scale(0);
+  border: 2px solid #1f8e83;
+  position: absolute;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  width: 40vh;
+  right: 60%;
+  top: 100%;
+  margin-top: 10px;
+  font-size: 80%;
+}
+
+.button {
+  font-family: FontAwesome;
+  margin-top: 10px;
+  width: 300px;
+  display: block;
+  border-radius: 5%;
+  font-size: 15pt;
+  font-weight: weight;
+  text-align: center;
+  cursor: pointer;
+  padding: 11px 44px;
+  background: #1f8e83;
+  color: #ffffff;
+  line-height: 1em;
+  transition: 0.3s;
+  border: 2px solid #1f8e83;
+  box-shadow: 3px 6px #32605a;
+}
+.button:active {
+  position: relative;
+  box-shadow: none;
+  transform: translateY(6px);
+  transform: translateX(3px);
+}
+.button:hover {
+  background: #1f8e83;
+  opacity: 0.7;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #c0bcbc;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.925);
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  input,
+table {
+    width: 100%;
+    padding: auto 30px;
+  }
+
+  input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #table {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #table tr {
+    display: block;
+    float: left;
+  }
+
+  #table tr td,
+#table tr th {
+    border-left: none;
+    display: block;
+    height: 50px;
+  }
+
+  #table thead {
+    display: block;
+    float: left;
+    width: 40%;
+  }
+
+  #table thead tr {
+    width: 100%;
+  }
+
+  #table tbody {
+    display: block;
+    float: left;
+    width: 60%;
+  }
+
+  #table tbody tr {
+    width: 100%;
+  }
+
+  #table tr td + td {
+    border-left: none;
+  }
+
+  #table tbody td:last-child {
+    border-bottom: solid 1px #ccc;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

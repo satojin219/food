@@ -1,5 +1,5 @@
-import { food_lists } from "./fetch.js";
-
+// import { food_lists } from "./nutrition.json.js";
+import { food_lists } from "./nutrition.json.js";
 export function calculate(){
 
   const calculateButton =document.querySelector('.cal-button');
@@ -12,36 +12,36 @@ export function calculate(){
   
   calculateButton.addEventListener('click', () => {
     let searchedFood= food_lists.filter((food_list) => {
-      return (enteredFoodName.value == food_list.food_name);
+      return (enteredFoodName.value == food_list["food-name"]);
     });
     console.log(searchedFood);
     
-    const kcal    =searchedFood[0].enerc_kcal*(edibleWeight.value / 100);
-    const suger   =searchedFood[0].choavlm*(edibleWeight.value / 100);
-    const prot    =searchedFood[0].prot_*(edibleWeight.value / 100);
-    const fat     =searchedFood[0].fat_*(edibleWeight.value / 100);
-    const na      =searchedFood[0].na*(edibleWeight.value / 100);
-    const k       =searchedFood[0].k*(edibleWeight.value / 100);
-    const ca      =searchedFood[0].ca*(edibleWeight.value / 100);
-    const mg      =searchedFood[0].mg*(edibleWeight.value / 100);
-    const p       =searchedFood[0].p*(edibleWeight.value / 100);
-    const fe       =searchedFood[0].fe*(edibleWeight.value / 100);
-    const zn      =searchedFood[0].zn*(edibleWeight.value / 100);
-    const cu      =searchedFood[0].cu*(edibleWeight.value / 100);
-    const vA      =searchedFood[0].retol*(edibleWeight.value / 100);
-    const vD      =searchedFood[0].vitd*(edibleWeight.value / 100);
-    const vK      =searchedFood[0].vitk*(edibleWeight.value / 100);
-    const vE      =searchedFood[0].tocpha*(edibleWeight.value / 100);
-    const vB1     =searchedFood[0].thia*(edibleWeight.value / 100);
-    const vB2     =searchedFood[0].ribf*(edibleWeight.value / 100);
-    const vB6     =searchedFood[0].vitb6a*(edibleWeight.value / 100);
-    const vB12    =searchedFood[0].vitb12*(edibleWeight.value / 100);
-    const niasin  =searchedFood[0].ne*(edibleWeight.value / 100);
-    const pantoten=searchedFood[0].pantac*(edibleWeight.value / 100);
-    const yousan  =searchedFood[0].fol*(edibleWeight.value / 100);
-    const vC      =searchedFood[0].vitc*(edibleWeight.value / 100);
-    const fib     =searchedFood[0].fib_*(edibleWeight.value / 100);
-    const alc     =searchedFood[0].alc*(edibleWeight.value / 100);
+    const kcal    =searchedFood[0]["ENERC_KCAL"]*(edibleWeight.value / 100);
+    const suger   =searchedFood[0]["CHOAVLM"]*(edibleWeight.value / 100);
+    const prot    =searchedFood[0]["PROT-"]*(edibleWeight.value / 100);
+    const fat     =searchedFood[0]["FAT-"]*(edibleWeight.value / 100);
+    const na      =searchedFood[0]["NA"]*(edibleWeight.value / 100);
+    const k       =searchedFood[0]["K"]*(edibleWeight.value / 100);
+    const ca      =searchedFood[0]["CA"]*(edibleWeight.value / 100);
+    const mg      =searchedFood[0]["MG"]*(edibleWeight.value / 100);
+    const p       =searchedFood[0]["P"]*(edibleWeight.value / 100);
+    const fe       =searchedFood[0]["FE"]*(edibleWeight.value / 100);
+    const zn      =searchedFood[0]["ZN"]*(edibleWeight.value / 100);
+    const cu      =searchedFood[0]["CU"]*(edibleWeight.value / 100);
+    const vA      =searchedFood[0]["RETOL"]*(edibleWeight.value / 100);
+    const vD      =searchedFood[0]["VITD"]*(edibleWeight.value / 100);
+    const vK      =searchedFood[0]["VITK"]*(edibleWeight.value / 100);
+    const vE      =searchedFood[0]["TOCPHA"]*(edibleWeight.value / 100);
+    const vB1     =searchedFood[0]["THIA"]*(edibleWeight.value / 100);
+    const vB2     =searchedFood[0]["RIBF"]*(edibleWeight.value / 100);
+    const vB6     =searchedFood[0]["VITB6A"]*(edibleWeight.value / 100);
+    const vB12    =searchedFood[0]["VITB12"]*(edibleWeight.value / 100);
+    const niasin  =searchedFood[0]["NE"]*(edibleWeight.value / 100);
+    const pantoten=searchedFood[0]["PANTAC"]*(edibleWeight.value / 100);
+    const yousan  =searchedFood[0]["FOL"]*(edibleWeight.value / 100);
+    const vC      =searchedFood[0]["VITC"]*(edibleWeight.value / 100);
+    const fib     =searchedFood[0]["FIB-"]*(edibleWeight.value / 100);
+    const alc     =searchedFood[0]["ALC"]*(edibleWeight.value / 100);
     
     nutritionCalculate(kcal    ,0 ,0);
     nutritionCalculate(suger   ,1 ,1);
