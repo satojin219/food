@@ -5,11 +5,11 @@ import '../css/style.scss';
 
 let m =[];
 food_lists.forEach(food_list => {
-console.log(food_list);
+// console.log(food_list);
   const name=food_list["food-name"];
   m.push(name);
 });
-console.log(m);
+// console.log(m);
 $(function(){
 $("#food").autocomplete({
 source:m,

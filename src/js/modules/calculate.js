@@ -14,7 +14,7 @@ export function calculate(){
     let searchedFood= food_lists.filter((food_list) => {
       return (enteredFoodName.value == food_list["food-name"]);
     });
-    console.log(searchedFood);
+    // console.log(searchedFood);
     
     const kcal    =searchedFood[0]["ENERC_KCAL"]*(edibleWeight.value / 100);
     const suger   =searchedFood[0]["CHOAVLM"]*(edibleWeight.value / 100);
