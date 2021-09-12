@@ -14,7 +14,7 @@ export function calculate(){
     let searchedFood= food_lists.filter((food_list) => {
       return (enteredFoodName.value == food_list["food-name"]);
     });
-    // console.log(searchedFood);
+    console.log(searchedFood);
     
     const kcal    =searchedFood[0]["ENERC_KCAL"]*(edibleWeight.value / 100);
     const suger   =searchedFood[0]["CHOAVLM"]*(edibleWeight.value / 100);
@@ -41,7 +41,7 @@ export function calculate(){
     const yousan  =searchedFood[0]["FOL"]*(edibleWeight.value / 100);
     const vC      =searchedFood[0]["VITC"]*(edibleWeight.value / 100);
     const fib     =searchedFood[0]["FIB-"]*(edibleWeight.value / 100);
-    const alc     =searchedFood[0]["ALC"]*(edibleWeight.value / 100);
+    const nacl_eq   =searchedFood[0]["NACL_EQ"]*(edibleWeight.value / 100);
     
     nutritionCalculate(kcal    ,0 ,0);
     nutritionCalculate(suger   ,1 ,1);
@@ -68,7 +68,7 @@ export function calculate(){
     nutritionCalculate(yousan  ,22,0);
     nutritionCalculate(vC      ,23,2);
     nutritionCalculate(fib     ,24,1);
-    nutritionCalculate(alc     ,25,1);
+    nutritionCalculate(nacl_eq ,25,1);
     
   });
 }

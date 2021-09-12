@@ -16,7 +16,7 @@ import { food_lists } from "./nutrition.json.js";
     const name=food_list["food-name"];
     m.push(name);
   });
-  console.log(m);
+  // console.log(m);
 $(function(){
   $("#food").autocomplete({
   source:m,
